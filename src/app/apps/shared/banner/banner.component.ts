@@ -7,9 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BannerComponent implements OnInit {
 
+  isExpanded = false;
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  toggle() {
+    this.isExpanded = !this.isExpanded;
   }
 
 }
